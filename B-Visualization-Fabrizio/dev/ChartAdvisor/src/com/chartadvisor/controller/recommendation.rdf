@@ -1,0 +1,25 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:chr="http://chartrecommender.com/properties/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="developers.google.com/chart/interactive/docs/gallery/chart1.0">
+    <rdfs:label>chart1.1</rdfs:label>
+    <chr:rank>chart1.2</chr:rank>
+    <chr:accuracy>chart1.3</chr:accuracy>
+  </rdf:Description>
+  <rdf:Description rdf:about="developers.google.com/chart/interactive/docs/gallery/chart2.0">
+    <rdfs:label>chart2.1</rdfs:label>
+    <chr:rank>chart2.2</chr:rank>
+    <chr:accuracy>chart2.3</chr:accuracy>
+  </rdf:Description>
+  <rdf:Description rdf:about="developers.google.com/chart/interactive/docs/gallery/chart3.0">
+    <rdfs:label>chart3.1</rdfs:label>
+    <chr:rank>chart3.2</chr:rank>
+    <chr:accuracy>chart3.3</chr:accuracy>
+  </rdf:Description>
+  <rdf:Description rdf:about="developers.google.com/chart/interactive/docs/gallery/chart4.0">
+    <rdfs:label>chart4.1</rdfs:label>
+    <chr:rank>chart4.2</chr:rank>
+    <chr:accuracy>chart4.3</chr:accuracy>
+  </rdf:Description>
+</rdf:RDF>
