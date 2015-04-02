@@ -1,6 +1,7 @@
 package com.chartadvisor.model;
 
 import com.chartadvisor.controller.AllocationGenerator;
+import com.chartadvisor.controller.Controller;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ResIterator;
 import com.hp.hpl.jena.rdf.model.Resource;
@@ -12,13 +13,13 @@ import com.hp.hpl.jena.vocabulary.*;
 import java.util.*;
 
 public final class Chart {
+		
+	private static final String chart = "C:/Users/Cristo/Desktop/LAB/chart.rdf";
+//	private static final String chart = Controller.findAbsoluteLocation()+"/chart.rdf"; // FOR .JAR 
 	
-private static final String chart = "/home/ahmad/Documents/chart.rdf";
-
-private static final String[] geoLabels = {"country","city","region","zip","zipcode", "capital"};
-
-private static final String[] coordinates = {"lat", "mag", "latitude", "magnitude"}; 
+	private static final String[] geoLabels = {"country","city","region","zip","zipcode", "capital"};
 	
+	private static final String[] coordinates = {"lat", "mag", "latitude", "magnitude"}; 
 	
 	public static Model getModel(){
 		FileManager.get().addLocatorClassLoader(Chart.class.getClassLoader());
@@ -80,7 +81,7 @@ private static final String[] coordinates = {"lat", "mag", "latitude", "magnitud
 					}
 					//System.out.println(stmtIter.next().getProperty(OWL2.annotatedSource).getString());
 				}catch (Exception e){
-					
+					//e.printStackTrace();
 				}
 				
 			}
@@ -199,6 +200,9 @@ private static final String[] coordinates = {"lat", "mag", "latitude", "magnitud
 				}
 			}
 		}
+		if (charts.isEmpty()) {
+			System.out.println(" NO VALUES!!");
+		}
 		charts.removeAll(duplicates);
 	}
 
@@ -218,9 +222,9 @@ private static final String[] coordinates = {"lat", "mag", "latitude", "magnitud
 		
 		
 		//To be provided by the interface
-		String[] propertiesNames = {"nameShort", "populationTotal", "populationYear", "HDIYear"};
+		String[] propertiesNames = {"nameShort", "populationTotal", "populationYear"};
 		//String path = "/home/ahmad/Documents/geodata.rdf";
-		String path = "/home/ahmad/git/Algorithm_forCharts_Recommendation/dev/Application/Bin/WebSemanticsLab/src/main/geodata.rdf";
+		String path = "C:/Users/Cristo/Desktop/ChartAdvisor/TEST/geodata.rdf";
 
 		
 		List<String[]> charts = findCharts(propertiesNames, path);
@@ -231,5 +235,4 @@ private static final String[] coordinates = {"lat", "mag", "latitude", "magnitud
 			System.out.println("-------------------");
 		}
 	}
-
 }

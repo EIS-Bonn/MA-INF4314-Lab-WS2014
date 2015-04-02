@@ -22,7 +22,6 @@ import com.hp.hpl.jena.vocabulary.RDFS;
 
 public class DictionaryManager implements ActionListener {
 	
-	private static final String dict = "C:/Users/Cristo/Desktop/dictionary.rdf";
 	private DictionaryView dview; 
 	
 	public DictionaryManager(DictionaryView dview) {
@@ -38,11 +37,11 @@ public class DictionaryManager implements ActionListener {
 		String LOM = dview.getJcbox_LOM().getSelectedItem().toString().toLowerCase(); 
 		System.out.println("+++ " + propertyName + "  " + propertyType + "  " + LOM);
 		try {
-			this.addResource(propertyName, propertyType, LOM);
+			Dictionary.addResource(propertyName, propertyType, LOM);
 			this.setJListValues();
 			this.dview.repaint();
 		} catch (Exception e) {
-			JOptionPane.showMessageDialog(this.dview,"Not valid value!.","Error!", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(this.dview,"Not valid value! The value already exist.","Error!", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 	
@@ -51,7 +50,7 @@ public class DictionaryManager implements ActionListener {
 	}
 	
 	public String[] getDictionaryList(){
-		Model m = this.getModel();
+		Model m = Dictionary.getModel();
 		ResIterator resources = m.listResourcesWithProperty(RDFS.label);
 		List<String> resultList = new ArrayList<String>();
 		while(resources.hasNext()){
@@ -61,39 +60,6 @@ public class DictionaryManager implements ActionListener {
 		return resultList.toArray(new String[resultList.size()]); 
 	}
 	
-	public void addResource(String propertyName, String propertyType, String LOM) throws Exception{
-		String alreadyExists = this.getLOM(propertyName, propertyType);
-		if(alreadyExists != null){
-			JOptionPane.showMessageDialog(this.dview, "level of measurement for "+propertyName+" of type "+propertyType+" already exists in the dictionary as a subclass of "+alreadyExists ,"Warning!", JOptionPane.WARNING_MESSAGE);
-			Exception e = new Exception("level of measurement for "+propertyName+" of type "+propertyType+" already exists in the dictionary as a subclass of "+alreadyExists);
-			throw e;
-		}
-		Model m = this.getModel();
-		m.createResource("http://levelofmeasurement.com/"+propertyType+"/"+propertyName+"#").addProperty(RDFS.subClassOf,LOM).addProperty(DC.type, propertyType).addProperty(RDFS.label, propertyName);
-		try {
-			m.write(new FileOutputStream(dict));
-		} catch (FileNotFoundException e) {
-			System.out.println("error saving model");
-		}
-	}
-	
-	public String getLOM(String propertyName, String propertyType){
-		Model m = this.getModel();
-		ResIterator resources = m.listResourcesWithProperty(RDFS.label);
-		while(resources.hasNext()){
-			Resource res = resources.next();
-			if(res.getProperty(RDFS.label).getString().equalsIgnoreCase(propertyName)){
-				if(res.getProperty(DC.type).getString().equalsIgnoreCase(propertyType)){
-					return res.getProperty(RDFS.subClassOf).getString();
-				}
-			}
-		}
-		return null;
-	}
-	
-	public Model getModel(){
-		return FileManager.get().loadModel(dict);
-	}
 	
 	public static void main(String[] args) {
 		DictionaryManager dm = new DictionaryManager(new DictionaryView());
