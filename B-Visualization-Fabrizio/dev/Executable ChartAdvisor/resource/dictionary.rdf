@@ -1,0 +1,65 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://levelofmeasurement.com/integer/year#">
+    <rdfs:label>year</rdfs:label>
+    <dc:type>integer</dc:type>
+    <rdfs:subClassOf>ordinal</rdfs:subClassOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/float/obsvalue#">
+    <rdfs:subClassOf>quantitative</rdfs:subClassOf>
+    <dc:type>float</dc:type>
+    <rdfs:label>obsvalue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/string/country#">
+    <rdfs:subClassOf>categorical</rdfs:subClassOf>
+    <dc:type>string</dc:type>
+    <rdfs:label>country</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/float/populationTotal#">
+    <rdfs:subClassOf>quantitative</rdfs:subClassOf>
+    <dc:type>float</dc:type>
+    <rdfs:label>populationTotal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/integer/pop_count#">
+    <rdfs:subClassOf>quantitative</rdfs:subClassOf>
+    <dc:type>integer</dc:type>
+    <rdfs:label>pop_count</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/string/nameShort#">
+    <rdfs:subClassOf>categorical</rdfs:subClassOf>
+    <dc:type>string</dc:type>
+    <rdfs:label>nameShort</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/int/populationYear#">
+    <rdfs:subClassOf>ordinal</rdfs:subClassOf>
+    <dc:type>int</dc:type>
+    <rdfs:label>populationYear</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/integer/gdp#">
+    <rdfs:subClassOf>quantitative</rdfs:subClassOf>
+    <dc:type>integer</dc:type>
+    <rdfs:label>gdp</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/integer/ggggg#">
+    <rdfs:label>ggggg</rdfs:label>
+    <dc:type>integer</dc:type>
+    <rdfs:subClassOf>categorical</rdfs:subClassOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/float/lat#">
+    <rdfs:subClassOf>quantitative</rdfs:subClassOf>
+    <dc:type>float</dc:type>
+    <rdfs:label>lat</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/integer/name_count#">
+    <rdfs:label>name_count</rdfs:label>
+    <dc:type>integer</dc:type>
+    <rdfs:subClassOf>quantitative</rdfs:subClassOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://levelofmeasurement.com/float/name_total#">
+    <rdfs:subClassOf>ordinal</rdfs:subClassOf>
+    <dc:type>float</dc:type>
+    <rdfs:label>name_total</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
