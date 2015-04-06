@@ -1,0 +1,83 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xml:base="http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/" > 
+    
+  <rdf:Description rdf:about="CANADA">
+    <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAN</ID>
+    <Life-Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.66</Life-Expectancy>
+    <Fertility-Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.67</Fertility-Rate>
+    <Region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">North America</Region>
+    <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33739900</Population>
+  </rdf:Description> 
+  
+  <rdf:Description rdf:about="GERMANY">
+    <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEU</ID>
+    <Life-Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#float">79.84</Life-Expectancy>
+    <Fertility-Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.36</Fertility-Rate>
+    <Region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe</Region>
+    <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81902307</Population>
+  </rdf:Description> 
+  
+  <rdf:Description rdf:about="DENMARK">
+    <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNK</ID>
+    <Life-Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#float">78.6</Life-Expectancy>
+    <Fertility-Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.84</Fertility-Rate>
+    <Region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe</Region>
+    <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5523095</Population>
+  </rdf:Description> 
+  
+  <rdf:Description rdf:about="EGYPT">
+    <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EGY</ID>
+    <Life-Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#float">72.73</Life-Expectancy>
+    <Fertility-Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.78</Fertility-Rate>
+    <Region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Middle East</Region>
+    <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79716203</Population>
+  </rdf:Description> 
+  
+  <rdf:Description rdf:about="Great Britain">
+    <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GBR</ID>
+    <Life-Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.05</Life-Expectancy>
+    <Fertility-Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2</Fertility-Rate>
+    <Region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe</Region>
+    <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61801570</Population>
+  </rdf:Description> 
+  
+  <rdf:Description rdf:about="IRAN">
+    <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IRN</ID>
+    <Life-Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#float">72.49</Life-Expectancy>
+    <Fertility-Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.7</Fertility-Rate>
+    <Region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Middle East</Region>
+    <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73137148</Population>
+  </rdf:Description> 
+  
+  <rdf:Description rdf:about="Israel">
+    <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISR</ID>
+    <Life-Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#float">81.55</Life-Expectancy>
+    <Fertility-Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.96</Fertility-Rate>
+    <Region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Middle East</Region>
+    <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7485600</Population>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="Russia">
+    <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RUS</ID>
+    <Life-Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#float">68.6</Life-Expectancy>
+    <Fertility-Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.54</Fertility-Rate>
+    <Region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe</Region>
+    <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">141850000</Population>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="UnitedStates">
+    <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</ID>
+    <Life-Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#float">78.09</Life-Expectancy>
+    <Fertility-Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.05</Fertility-Rate>
+    <Region rdf:datatype="http://www.w3.org/2001/XMLSchema#string">North America</Region>
+    <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">307007000</Population>
+  </rdf:Description>
+  
+</rdf:RDF>
