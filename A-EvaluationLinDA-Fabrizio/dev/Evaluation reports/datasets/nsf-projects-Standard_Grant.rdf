@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE owl [
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+  <!ENTITY dct "http://purl.org/dc/terms/">
+  <!ENTITY akt "http://www.aktors.org/ontology/portal#">
+  <!ENTITY akts "http://www.aktors.org/ontology/support#">
+  <!ENTITY unlocode "http://unlocode.rkbexplorer.com/id/">
+]>
+<rdf:RDF
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:dc="&dc;"
+         xmlns:dct="&dct;"
+         xmlns:akt="&akt;"
+         xmlns:akts="&akts;"
+         xmlns:unlocode="&unlocode;"
+>
+
+  <owl:Ontology rdf:about="">
+    <rdfs:label>Southampton University : nsf-projects-Standard_Grant.rdf</rdfs:label>
+    <dc:title xml:lang="en">Southampton University : nsf-projects-Standard_Grant.rdf</dc:title>
+    <dc:description xml:lang="en">This ontology contains information detailing research projects that have been funded by the National Science Foundation</dc:description>
+    <dc:creator>ReSIST Project</dc:creator>
+    <dc:creator>Ian Millard</dc:creator>
+    <dc:creator>Christopher Franklin</dc:creator>
+    <dc:creator>Hugh Glaser</dc:creator>
+    <owl:imports rdf:resource="http://www.aktors.org/ontology/portal"/>
+    <owl:imports rdf:resource="http://www.aktors.org/ontology/extension"/>
+  </owl:Ontology>
+
+  <rdf:Description rdf:about="http://nsf.rkbexplorer.com/id/award-8711448">
+    <rdf:type rdf:resource="&akt;Project" />
+    <akt:has-web-address>http://nsf.gov/awardsearch/showAward.do?AwardNumber=8711448</akt:has-web-address>
+    <akt:has-title>The Cognitive Consequence of Disconfirming Self Information,HRD,CROSS-DIRECTORATE PROGRAMS,February 1</akt:has-title>
+    <akt:has-project-leader>
+        <akt:Person rdf:about="http://nsf.rkbexplorer.com/id/person-aaf407b01f33b9d65d09f32c8688a5e0">
+            <akt:family-name>Mercy College of Detroit</akt:family-name>
+            <akt:has-affiliation rdf:resource="http://nsf.rkbexplorer.com/id/organization-d41d8cd98f00b204e9800998ecf8427e"/>
+        </akt:Person>
+    </akt:has-project-leader>
+    <akt:has-leading-organization>
+        <akt:Organization rdf:about="http://nsf.rkbexplorer.com/id/organization-d41d8cd98f00b204e9800998ecf8427e">
+            <akt:has-title></akt:has-title>
+            <akt:has-telephone-number>9120</akt:has-telephone-number>
+            <akt:has-postal-address>
+                <akt:Postal-Address rdf:about="http://nsf.rkbexplorer.com/id/address-d71f4b4c9287d2f6353f2ea4a4f305f5">
+                    <akt:address-pretty-name>MI,48219,3135926000,EHR</akt:address-pretty-name>
+                    <akts:has-pretty-name>MI,48219,3135926000,EHR</akts:has-pretty-name>
+                    <akt:address-city-or-village rdf:resource="http://unlocode.rkbexplorer.com/id/US-3135926000"/>
+                    <akt:address-city-or-village>
+                        <akt:City rdf:about="http://nsf.rkbexplorer.com/id/city-ee7230dec6c5cf2229f0a706a265ca49">
+                            <akts:has-pretty-name>48219</akts:has-pretty-name>
+                        </akt:City>
+                    </akt:address-city-or-village>
+                    <akt:address-country rdf:resource="http://unlocode.rkbexplorer.com/id/US"/>
+                    <akt:address-postcode>EHR</akt:address-postcode>
+                    <akt:address-street>MI</akt:address-street>
+                </akt:Postal-Address>
+            </akt:has-postal-address>
+        </akt:Organization>
+    </akt:has-leading-organization>
+    <akt:has-funding>
+        <akt:Funding rdf:about="http://nsf.rkbexplorer.com/id/grant-8711448">
+            <akts:has-pretty-name>NSF 8711448</akts:has-pretty-name>
+            <akt:has-grant-reference>8711448</akt:has-grant-reference>
+            <akt:funding-source rdf:resource="http://nsf.rkbexplorer.com/id/"/>
+        </akt:Funding>
+    </akt:has-funding>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://nsf.rkbexplorer.com/id/award-8909722">
+    <rdf:type rdf:resource="&akt;Project" />
+    <akt:has-web-address>http://nsf.gov/awardsearch/showAward.do?AwardNumber=8909722</akt:has-web-address>
+    <akt:has-title>Colloidal Fouling of Porous Membrane Filters:  The Effect  of Particle Size and Stability,CBET,ENVIRONMENTAL ENGINEERING,July 1</akt:has-title>
+    <akt:has-project-leader>
+        <akt:Person rdf:about="http://nsf.rkbexplorer.com/id/person-45a9d638003955b3572cbc8cca4ba349">
+            <akt:family-name>William Marsh Rice University</akt:family-name>
+            <akt:has-affiliation rdf:resource="http://nsf.rkbexplorer.com/id/organization-a836365c33a830df07d5351f83bd3bb9"/>
+        </akt:Person>
+    </akt:has-project-leader>
+    <akt:has-leading-organization>
+        <akt:Organization rdf:about="http://nsf.rkbexplorer.com/id/organization-a836365c33a830df07d5351f83bd3bb9">
+            <akt:has-title>Edward H. Bryan</akt:has-title>
+            <akt:has-telephone-number>1440</akt:has-telephone-number>
+            <akt:has-postal-address>
+                <akt:Postal-Address rdf:about="http://nsf.rkbexplorer.com/id/address-a875579cf7cd197ccef32abba02919d1">
+                    <akt:address-pretty-name>TX,77005,7133484820,ENG</akt:address-pretty-name>
+                    <akts:has-pretty-name>TX,77005,7133484820,ENG</akts:has-pretty-name>
+                    <akt:address-city-or-village rdf:resource="http://unlocode.rkbexplorer.com/id/US-7133484820"/>
+                    <akt:address-city-or-village>
+                        <akt:City rdf:about="http://nsf.rkbexplorer.com/id/city-21f48c9c53ebdee82c20134be0aa40fa">
+                            <akts:has-pretty-name>77005</akts:has-pretty-name>
+                        </akt:City>
+                    </akt:address-city-or-village>
+                    <akt:address-country rdf:resource="http://unlocode.rkbexplorer.com/id/US"/>
+                    <akt:address-postcode>ENG</akt:address-postcode>
+                    <akt:address-street>TX</akt:address-street>
+                </akt:Postal-Address>
+            </akt:has-postal-address>
+        </akt:Organization>
+    </akt:has-leading-organization>
+    <akt:has-funding>
+        <akt:Funding rdf:about="http://nsf.rkbexplorer.com/id/grant-8909722">
+            <akts:has-pretty-name>NSF 8909722</akts:has-pretty-name>
+            <akt:has-grant-reference>8909722</akt:has-grant-reference>
+            <akt:funding-source rdf:resource="http://nsf.rkbexplorer.com/id/"/>
+            <akt:has-grant-value>
+                <akt:Amount-Of-Money>
+                    <akt:has-amount>wiesner@duke.edu</akt:has-amount>
+                    <akts:has-unit-of-measure>&akt;usd</akts:has-unit-of-measure>
+                </akt:Amount-Of-Money>
+            </akt:has-grant-value>
+        </akt:Funding>
+    </akt:has-funding>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://nsf.rkbexplorer.com/id/award-9603951">
+    <rdf:type rdf:resource="&akt;Project" />
+    <akt:has-web-address>http://nsf.gov/awardsearch/showAward.do?AwardNumber=9603951</akt:has-web-address>
+    <akt:has-title>Development of the Immune System: Are Neonatal T Cells     Deficient in Numbers or Function In Vivo?,MCB,CELLULAR SYSTEMS,May 1</akt:has-title>
+    <akt:has-project-leader>
+        <akt:Person rdf:about="http://nsf.rkbexplorer.com/id/person-674e247ace1d1b305e9e93b3be8f8dc3">
+            <akt:family-name>University of Miami School of Medicine</akt:family-name>
+            <akt:has-affiliation rdf:resource="http://nsf.rkbexplorer.com/id/organization-dd4aa7cb89205839f2e9a8f195c9c602"/>
+        </akt:Person>
+    </akt:has-project-leader>
+    <akt:has-leading-organization>
+        <akt:Organization rdf:about="http://nsf.rkbexplorer.com/id/organization-dd4aa7cb89205839f2e9a8f195c9c602">
+            <akt:has-title>Jermelina L. Tupas</akt:has-title>
+            <akt:has-telephone-number>1114</akt:has-telephone-number>
+            <akt:has-postal-address>
+                <akt:Postal-Address rdf:about="http://nsf.rkbexplorer.com/id/address-8cfd58172c5eb38bc78781317d621111">
+                    <akt:address-pretty-name>FL,33136,3052435834,BIO</akt:address-pretty-name>
+                    <akts:has-pretty-name>FL,33136,3052435834,BIO</akts:has-pretty-name>
+                    <akt:address-city-or-village rdf:resource="http://unlocode.rkbexplorer.com/id/US-3052435834"/>
+                    <akt:address-city-or-village>
+                        <akt:City rdf:about="http://nsf.rkbexplorer.com/id/city-228872c6bcbb4ba580cc93345e2c6775">
+                            <akts:has-pretty-name>33136</akts:has-pretty-name>
+                        </akt:City>
+                    </akt:address-city-or-village>
+                    <akt:address-country rdf:resource="http://unlocode.rkbexplorer.com/id/US"/>
+                    <akt:address-postcode>BIO</akt:address-postcode>
+                    <akt:address-street>FL</akt:address-street>
+                </akt:Postal-Address>
+            </akt:has-postal-address>
+        </akt:Organization>
+    </akt:has-leading-organization>
+    <akt:has-funding>
+        <akt:Funding rdf:about="http://nsf.rkbexplorer.com/id/grant-9603951">
+            <akts:has-pretty-name>NSF 9603951</akts:has-pretty-name>
+            <akt:has-grant-reference>9603951</akt:has-grant-reference>
+            <akt:funding-source rdf:resource="http://nsf.rkbexplorer.com/id/"/>
+            <akt:has-grant-value>
+                <akt:Amount-Of-Money>
+                    <akt:has-amount>radkins@med.miami.edu</akt:has-amount>
+                    <akts:has-unit-of-measure>&akt;usd</akts:has-unit-of-measure>
+                </akt:Amount-Of-Money>
+            </akt:has-grant-value>
+        </akt:Funding>
+    </akt:has-funding>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://nsf.rkbexplorer.com/id/award-9711863">
+    <rdf:type rdf:resource="&akt;Project" />
+    <akt:has-web-address>http://nsf.gov/awardsearch/showAward.do?AwardNumber=9711863</akt:has-web-address>
+    <akt:has-title>Doctoral Dissertation Research:  Race and Patterns of      Migration in the Southern Move to the Industrial Corrider   1910-1980,SES,SOCIOLOGY,August 1</akt:has-title>
+    <akt:has-project-leader>
+        <akt:Person rdf:about="http://nsf.rkbexplorer.com/id/person-4a00462cf7497da5564f1c4ec702dcb8">
+            <akt:family-name>Carnegie-Mellon University</akt:family-name>
+            <akt:has-affiliation rdf:resource="http://nsf.rkbexplorer.com/id/organization-e751c40e5058bfde0a04dbc396bd139a"/>
+        </akt:Person>
+    </akt:has-project-leader>
+    <akt:has-leading-organization>
+        <akt:Organization rdf:about="http://nsf.rkbexplorer.com/id/organization-e751c40e5058bfde0a04dbc396bd139a">
+            <akt:has-title>Patricia White</akt:has-title>
+            <akt:has-telephone-number>1331</akt:has-telephone-number>
+            <akt:has-postal-address>
+                <akt:Postal-Address rdf:about="http://nsf.rkbexplorer.com/id/address-c65831fcb7d4bed0df04b2fea50c4732">
+                    <akt:address-pretty-name>PA,15213,4122688746,SBE</akt:address-pretty-name>
+                    <akts:has-pretty-name>PA,15213,4122688746,SBE</akts:has-pretty-name>
+                    <akt:address-city-or-village rdf:resource="http://unlocode.rkbexplorer.com/id/US-4122688746"/>
+                    <akt:address-city-or-village>
+                        <akt:City rdf:about="http://nsf.rkbexplorer.com/id/city-05f7136bcb0b2ca2dff08f65bf468a55">
+                            <akts:has-pretty-name>15213</akts:has-pretty-name>
+                        </akt:City>
+                    </akt:address-city-or-village>
+                    <akt:address-country rdf:resource="http://unlocode.rkbexplorer.com/id/US"/>
+                    <akt:address-postcode>SBE</akt:address-postcode>
+                    <akt:address-street>PA</akt:address-street>
+                </akt:Postal-Address>
+            </akt:has-postal-address>
+        </akt:Organization>
+    </akt:has-leading-organization>
+    <akt:has-funding>
+        <akt:Funding rdf:about="http://nsf.rkbexplorer.com/id/grant-9711863">
+            <akts:has-pretty-name>NSF 9711863</akts:has-pretty-name>
+            <akt:has-grant-reference>9711863</akt:has-grant-reference>
+            <akt:funding-source rdf:resource="http://nsf.rkbexplorer.com/id/"/>
+            <akt:has-grant-value>
+                <akt:Amount-Of-Money>
+                    <akt:has-amount>trotter@andrew.cmu.edu</akt:has-amount>
+                    <akts:has-unit-of-measure>&akt;usd</akts:has-unit-of-measure>
+                </akt:Amount-Of-Money>
+            </akt:has-grant-value>
+        </akt:Funding>
+    </akt:has-funding>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://nsf.rkbexplorer.com/id/award-0402539">
+    <rdf:type rdf:resource="&akt;Project" />
+    <akt:has-web-address>http://nsf.gov/awardsearch/showAward.do?AwardNumber=0402539</akt:has-web-address>
+    <akt:has-title>Collaborative Research: Combining Video Plankton Recorder imaging with Laser Induced Breakdown Spectroscopy and Raman Spectroscopy to identify plankton and seston.,OCE,OCEAN TECH &amp; INTERDISC COORDIN,May 1</akt:has-title>
+    <akt:has-project-leader>
+        <akt:Person rdf:about="http://nsf.rkbexplorer.com/id/person-6cff8fcc59d8eac814d60ce85f258250">
+            <akt:family-name>University South Carolina Research Foundation</akt:family-name>
+            <akt:has-affiliation rdf:resource="http://nsf.rkbexplorer.com/id/organization-8f7c2166212ef271928fee517937e2b2"/>
+        </akt:Person>
+    </akt:has-project-leader>
+    <akt:has-leading-organization>
+        <akt:Organization rdf:about="http://nsf.rkbexplorer.com/id/organization-8f7c2166212ef271928fee517937e2b2">
+            <akt:has-title>Kandace S. Binkley</akt:has-title>
+            <akt:has-telephone-number>1680</akt:has-telephone-number>
+            <akt:has-postal-address>
+                <akt:Postal-Address rdf:about="http://nsf.rkbexplorer.com/id/address-a7fa74350767c9a682b1b3f86c830236">
+                    <akt:address-pretty-name>SC,29208,8037777093,GEO</akt:address-pretty-name>
+                    <akts:has-pretty-name>SC,29208,8037777093,GEO</akts:has-pretty-name>
+                    <akt:address-city-or-village rdf:resource="http://unlocode.rkbexplorer.com/id/US-8037777093"/>
+                    <akt:address-city-or-village>
+                        <akt:City rdf:about="http://nsf.rkbexplorer.com/id/city-a01874b1881feb4f498d3f877bd41e62">
+                            <akts:has-pretty-name>29208</akts:has-pretty-name>
+                        </akt:City>
+                    </akt:address-city-or-village>
+                    <akt:address-country rdf:resource="http://unlocode.rkbexplorer.com/id/US"/>
+                    <akt:address-postcode>GEO</akt:address-postcode>
+                    <akt:address-street>SC</akt:address-street>
+                </akt:Postal-Address>
+            </akt:has-postal-address>
+        </akt:Organization>
+    </akt:has-leading-organization>
+    <akt:has-funding>
+        <akt:Funding rdf:about="http://nsf.rkbexplorer.com/id/grant-0402539">
+            <akts:has-pretty-name>NSF 0402539</akts:has-pretty-name>
+            <akt:has-grant-reference>0402539</akt:has-grant-reference>
+            <akt:funding-source rdf:resource="http://nsf.rkbexplorer.com/id/"/>
+            <akt:has-grant-value>
+                <akt:Amount-Of-Money>
+                    <akt:has-amount>angel@mail.chem.sc.edu</akt:has-amount>
+                    <akts:has-unit-of-measure>&akt;usd</akts:has-unit-of-measure>
+                </akt:Amount-Of-Money>
+            </akt:has-grant-value>
+        </akt:Funding>
+    </akt:has-funding>
+  </rdf:Description>
+
+</rdf:RDF>
+
+<!--  Canonisation Information: Fri, 13 Apr 2012 23:43:51 +0100
+0 URI(s) were substituted from file rdf/nsf-projects-Standard_Grant.rdf to file rdf/nsf-projects-Standard_Grant.rdf-canon
+-->
