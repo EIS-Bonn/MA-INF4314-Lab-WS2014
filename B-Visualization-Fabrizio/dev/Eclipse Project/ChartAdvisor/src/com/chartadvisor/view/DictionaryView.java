@@ -244,11 +244,11 @@ public class DictionaryView extends javax.swing.JFrame {
     }
 
     public JTextField getJtxt_label() {
-        return jtxt_DataType;
+        return jtxt_label;
     }
 
     public void setJtxt_label(JTextField jtxt_label) {
-        this.jtxt_DataType = jtxt_label;
+        this.jtxt_label = jtxt_label;
     }
 
     public JComboBox getJcbox_LOM() {

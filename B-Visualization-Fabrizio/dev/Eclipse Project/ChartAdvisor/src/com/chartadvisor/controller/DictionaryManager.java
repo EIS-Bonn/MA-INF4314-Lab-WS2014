@@ -28,7 +28,6 @@ public class DictionaryManager implements ActionListener {
 		this.dview = dview;
 		this.dview.getJbtn_add().addActionListener(this);
 		this.setJListValues();
-		
 	}
 	
 	public void addValueToJList(){
@@ -38,6 +37,7 @@ public class DictionaryManager implements ActionListener {
 		System.out.println("+++ " + propertyName + "  " + propertyType + "  " + LOM);
 		try {
 			Dictionary.addResource(propertyName, propertyType, LOM);
+			System.out.println("+++ " + propertyName + "  " + propertyType + "  " + LOM);
 			this.setJListValues();
 			this.dview.repaint();
 		} catch (Exception e) {
