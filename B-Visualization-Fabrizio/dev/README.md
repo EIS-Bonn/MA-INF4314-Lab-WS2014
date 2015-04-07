@@ -1,6 +1,7 @@
 ## Chart Advisor development.
 Here are all files related to the development of this software, including an Eclipse project ready to be modified. 
 
+[![](https://github.com/CristoLeiva/Algorithm_forCharts_Recommendation/blob/master/wiki_resources/front/front.jpg)](https://youtu.be/v7hBu5nNlFI)
 
 ## Content
 * [Presentations](https://github.com/EIS-Bonn/MA-INF4314-Lab/tree/master/B-Visualization-Fabrizio/presentations)
