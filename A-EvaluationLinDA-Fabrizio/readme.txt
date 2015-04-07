@@ -18,7 +18,7 @@ Open the terminal in Ubuntu and enter ther following commands
 
 1. ps aux | grep virtuoso
 
-2. sudo kill <number of the process virtuso 6.1>
+2. sudo kill <number of the process virtuoso 6.1>
 
 
 3. sudo /usr/local/virtuoso-opensource/bin/virtuoso-t +config /usr/local/virtuoso-opensource/var/lib/virtuoso/db/virtuoso.ini 
