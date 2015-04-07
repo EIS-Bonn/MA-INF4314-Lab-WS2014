@@ -1,8 +1,9 @@
 ## Lab Team Information
 This is a Lab project developed by a team of students of Master in Computer Science at Universität Bonn.   
 
-Group B - ChartAdvisor: Efficient Algorithm for Recommendation of Data Visualization Tools.
+Group B - ChartAdvisor: Efficient Algorithm for Recommendation of Data Visualization Tools. 
 Group Members: Cristobal Leiva, Jorge Ortiz, Ahmad Amayri
+
 For any additional information about this project contact:
 leivacristo@gmail.com / jorgeortiz@colombia.com / s6ahamay@uni-bonn.de
 
