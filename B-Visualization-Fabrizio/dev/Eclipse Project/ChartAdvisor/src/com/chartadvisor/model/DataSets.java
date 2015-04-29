@@ -205,7 +205,7 @@ public class DataSets {
 		}
 		catch(Exception Ex)
 		{
-			JOptionPane.showMessageDialog(null, "Error", "Properties selected are of different resources!", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Properties selected are of different resources!", "Error", JOptionPane.ERROR_MESSAGE);
 		}finally
 		{
 

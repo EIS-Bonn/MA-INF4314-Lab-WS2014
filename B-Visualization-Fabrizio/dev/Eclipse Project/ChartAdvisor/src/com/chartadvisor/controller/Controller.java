@@ -63,22 +63,27 @@ public class Controller implements ActionListener {
 			if (view.getCheckedItems().isEmpty()) {
 				JOptionPane.showMessageDialog(this.view,"No properties were selected. Please make sure you have selected some properties.","Warning!", JOptionPane.WARNING_MESSAGE);
 			} else {
-				List<String[]> results = Chart.findCharts(this.getSelectedProperties(), inputFilePath); //REPLACE WITH REAL findChard METHOD!
-				if (results.isEmpty()) {//REPLACE WITH REAL findChard METHOD!
-					JOptionPane.showMessageDialog(this.view,"No Chart matches were found! Please try selecting other properties.","Warning!", JOptionPane.WARNING_MESSAGE);
-				} else {
-					JFileChooser fileChooser = new JFileChooser();
-			        int returnValue = fileChooser.showSaveDialog(null);
-			        if (returnValue == JFileChooser.APPROVE_OPTION) {
-						if (this.view.getJradio_RDF().isSelected()) {
-							outputManager.generateRDFOutput(results, new File(fileChooser.getSelectedFile().toString() + ".rdf"));
-						} else if(this.view.getJradio_XML().isSelected()){
-							outputManager.generateXMLOutput(results, new File(fileChooser.getSelectedFile().toString() + ".xml"));
-						} else {
-							outputManager.generateTXTOutput(results, new File(fileChooser.getSelectedFile().toString() + ".txt"));
-						}
-						JOptionPane.showMessageDialog(this.view,"Recommendation list successfully created!","Success!", JOptionPane.INFORMATION_MESSAGE);
-			        }
+				try {
+					List<String[]> results = Chart.findCharts(this.getSelectedProperties(), inputFilePath); //REPLACE WITH REAL findChard METHOD!			
+					if (results == null || results.isEmpty()) {
+						JOptionPane.showMessageDialog(this.view,"No Chart matches were found! ","Warning!", JOptionPane.WARNING_MESSAGE);
+					} else {
+						JFileChooser fileChooser = new JFileChooser();
+				        int returnValue = fileChooser.showSaveDialog(null);
+				        if (returnValue == JFileChooser.APPROVE_OPTION) {
+							if (this.view.getJradio_RDF().isSelected()) {
+								outputManager.generateRDFOutput(results, new File(fileChooser.getSelectedFile().toString() + ".rdf"));
+							} else if(this.view.getJradio_XML().isSelected()){
+								outputManager.generateXMLOutput(results, new File(fileChooser.getSelectedFile().toString() + ".xml"));
+							} else {
+								outputManager.generateTXTOutput(results, new File(fileChooser.getSelectedFile().toString() + ".txt"));
+							}
+							JOptionPane.showMessageDialog(this.view,"Recommendation list successfully created!","Success!", JOptionPane.INFORMATION_MESSAGE);
+				        }
+					}
+				} catch (NullPointerException e2) {
+					System.out.println("No matched for those properties, dictionary incomplete!");
+					JOptionPane.showMessageDialog(this.view,"No Chart matches were found! Please add selected properties to dictionary","Warning!", JOptionPane.WARNING_MESSAGE);
 				}
 			}
 		}

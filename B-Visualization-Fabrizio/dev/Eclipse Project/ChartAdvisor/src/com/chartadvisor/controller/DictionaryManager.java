@@ -55,7 +55,7 @@ public class DictionaryManager implements ActionListener {
 		List<String> resultList = new ArrayList<String>();
 		while(resources.hasNext()){
 			Resource res = resources.next();
-			resultList.add(res.getProperty(RDFS.label).getString() + "  /  "+res.getProperty(DC.type).getString() + "  /  " + res.getProperty(RDFS.subClassOf).getString());
+			resultList.add(res.getProperty(RDFS.label).getString() + "  /  "+res.getProperty(DC.format).getString() + "  /  " + res.getProperty(DC.description).getString());
 		}
 		return resultList.toArray(new String[resultList.size()]); 
 	}

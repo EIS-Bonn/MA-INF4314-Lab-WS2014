@@ -62,7 +62,7 @@ public class AllocationGenerator {
 		return partial;
 	}
 	
-	public static List<Allocation> generateAllocations(Property[] properties){
+	public static List<Allocation> generateAllocations(Property[] properties) throws NullPointerException{
 		ArrayList<Allocation> allocations = new ArrayList<Allocation>();
 		ArrayList<ArrayList<Property>> list1,list2;
 		for (int i=1; i<=properties.length; i++){

@@ -12,7 +12,7 @@ import com.hp.hpl.jena.vocabulary.*;
 
 public final class Dictionary {
 	
-//	private static final String dict = "C:/Users/Cristo/Desktop/FINAL LAB/resource/dictionary.rdf";
+
 	private static final String dict = Controller.findAbsoluteLocation()+"/resource/dictionary.rdf"; // FOR .JAR 
 	
 	public static Model getModel(){
@@ -26,7 +26,7 @@ public final class Dictionary {
 			throw e;
 		}
 		Model m = Dictionary.getModel();
-		m.createResource("http://levelofmeasurement.com/"+propertyType+"/"+propertyName+"#").addProperty(RDFS.subClassOf,LOM).addProperty(DC.type, propertyType).addProperty(RDFS.label, propertyName);
+		m.createResource("http://levelofmeasurement.com/"+propertyType+"/"+propertyName+"#").addProperty(DC.description,LOM).addProperty(DC.format, propertyType).addProperty(RDFS.label, propertyName);
 		try {
 			m.write(new FileOutputStream(dict));
 		} catch (FileNotFoundException e) {
@@ -40,8 +40,8 @@ public final class Dictionary {
 		while(resources.hasNext()){
 			Resource res = resources.next();
 			if(res.getProperty(RDFS.label).getString().equalsIgnoreCase(propertyName)){
-				if(res.getProperty(DC.type).getString().equalsIgnoreCase(propertyType)){
-					return res.getProperty(RDFS.subClassOf).getString();
+				if(res.getProperty(DC.format).getString().equalsIgnoreCase(propertyType)){
+					return res.getProperty(DC.description).getString();
 				}
 			}
 		}

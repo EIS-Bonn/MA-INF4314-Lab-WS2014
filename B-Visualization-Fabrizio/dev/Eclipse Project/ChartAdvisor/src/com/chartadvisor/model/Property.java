@@ -64,8 +64,8 @@ public class Property {
 	}
 	
 	public String toString(){
-		//return new String(propertyName+":"+propertyType);
-		return new String(propertyName);
+		return new String(propertyName+":"+propertyType);
+		//return new String(propertyName);
 	}
 
 }
